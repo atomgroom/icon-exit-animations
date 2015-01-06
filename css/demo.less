@@ -1,0 +1,173 @@
+@import "normalize.less";
+@import "animate.less";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.animated { // overwrites the animate.css lib speed
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+.demo-wrapper {
+  padding: 200px;
+}
+.services-list {
+  margin: 100px 0;
+  overflow: hidden;
+  li {
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+    &:last-child {
+      margin:0;
+    }
+  }
+}
+.icon-homepage-wrapper {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: circle(70px at center);
+  -moz-clip-path: circle(70px at center);
+  -webkit-clip-path: circle(70px at center);
+  cursor: pointer;
+ 
+}
+.circle-base {
+  background: white;
+  border: 2px solid #c2c4c6;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+}
+.circle-hover {
+  background: white;
+  border: 2px solid #cb3036;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  display: none;
+  z-index: 1;
+
+}
+.circle-cover {
+  background: white;
+  border: 0;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  z-index: 2;
+  top: 3px !important;
+  left: 3px !important;
+}
+.circle {
+  position: absolute;
+  top:0;
+  left:0;
+}
+.icon-homepage {
+  position: absolute;
+  z-index: 3;
+}
+.icon-homepage--ux {
+  bottom:14px;
+  left: 25px;
+  width: 80px;
+  height: 93px;
+}
+.icon-homepage--dev {
+  top: 3px;
+  right: 1px;
+  width: 94px;
+}
+.icon-homepage--train {
+  top: 34px;
+  right: 16px;
+  width: 108px;
+}
+.icon-homepage--os {
+  top: 21px;
+  right: 16px;
+  width: 96px;
+}
+.icon-homepage--ux-heart,
+.icon-homepage--dev-cog,
+.icon-homepage--train-code,
+.icon-homepage--os-node {
+  .hide;
+  z-index: 4;
+}
+// Animation Interactions
+
+// Exit Animation
+.icon-homepage-wrapper.out{
+  .circle-hover {
+    .flipOutX;  
+  }
+  .icon-homepage--ux-heart,
+  .icon-homepage--dev-cog,
+  .icon-homepage--train-code,
+  .icon-homepage--os-node {
+    .zoomOutUp;      
+  }   
+}
+// Hover Animation
+.icon-homepage-wrapper.over {
+  .circle-hover {
+    .zoomInDown;
+    -webkit-animation-duration: .4s;
+          animation-duration: .4s;    
+  }
+  .icon-homepage--ux-heart,
+  .icon-homepage--dev-cog,
+  .icon-homepage--train-code,
+  .icon-homepage--os-node {
+    .zoomInUp;      
+  } 
+}
+// Shared Exit and Hover
+.icon-homepage-wrapper.over,
+ .icon-homepage-wrapper.out {
+  .circle-hover,
+  .icon-homepage--ux-heart,
+  .icon-homepage--dev-cog,
+  .icon-homepage--train-code,
+  .icon-homepage--os-node  {
+    display: inline-block;
+    .animated; 
+  }
+  .icon-homepage--ux-heart {
+    top: 73px;
+    left:41px;
+    width: 48.19px;
+    height:38.48px;
+  }
+  .icon-homepage--dev-cog {
+    top: 34px;
+    right:1px;
+    width: 47px;
+    height:60px;
+  }  
+  .icon-homepage--train-code {
+    top: 57px;
+    right: 46px;
+    width: 39.64px;
+    height:22.48px;
+  }    
+  .icon-homepage--os-node {
+    top: 21px;
+    right: 54px;
+    width: 18.67px;
+    height:18.67px;
+  } 
+}
+
+// Utilities 
+.hide {
+  display: none;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Icon Exit (unhover) Animations</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet/less" type="text/css" href="css/demo.less">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+    </head>
+    <body>
+
+        <div class="demo-wrapper">
+            <h1>Remember that one time that you didn't want a CSS animation to play when the page loads? But, you did want it to play on hover. And, you wanted a separate animation on unhover?</h1>
+            <p>Oh Yeah! This is how you can do that. </p>
+            <ul class="services-list">
+                <li>
+                    <div class="icon-homepage-wrapper">
+                        <div class="circle circle-base"></div>
+                        <div class="circle circle-hover"></div>
+                        <div class="circle circle-cover"></div>
+                        <img class="icon-homepage icon-homepage--ux-heart" src="svg/icon-ux-heart.svg" />
+                        <img class="icon-homepage icon-homepage--ux" src="svg/icon-ux-base.svg" />
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-homepage-wrapper">
+                        <div class="circle circle-base"></div>
+                        <div class="circle circle-hover"></div>
+                        <div class="circle circle-cover"></div>
+                        <img class="icon-homepage icon-homepage--dev-cog" src="svg/icon-dev-cog.svg" />
+                        <img class="icon-homepage icon-homepage--dev" src="svg/icon-dev-base.svg" />
+                    </div>
+                </li>    
+                <li>
+                    <div class="icon-homepage-wrapper">
+                        <div class="circle circle-base"></div>
+                        <div class="circle circle-hover"></div>
+                        <div class="circle circle-cover"></div>
+                        <img class="icon-homepage icon-homepage--train-code" src="svg/icon-train-code.svg" />
+                        <img class="icon-homepage icon-homepage--train" src="svg/icon-train-base.svg" />
+                    </div>
+                </li> 
+                <li>
+                    <div class="icon-homepage-wrapper">
+                        <div class="circle circle-base"></div>
+                        <div class="circle circle-hover"></div>
+                        <div class="circle circle-cover"></div>
+                        <img class="icon-homepage icon-homepage--os-node" src="svg/icon-os-node.svg" />
+                        <img class="icon-homepage icon-homepage--os" src="svg/icon-os-base.svg" />
+                    </div>
+                </li> 
+            </ul>
+            <hr>
+            <ul>
+              <li><a href="https://github.com/atomgroomdesign/icon-exit-animations/zipball/master">Download <strong>ZIP File</strong></a></li>
+              <li><a href="https://github.com/atomgroomdesign/icon-exit-animations/tarball/master">Download <strong>TAR Ball</strong></a></li>
+              <li><a href="https://github.com/atomgroomdesign/icon-exit-animations">View On <strong>GitHub</strong></a></li>
+            </ul>
+            <h6>
+                Copyright 2015 Atom Groom. Licensed under the MIT License:http://opensource.org/licenses/MIT
+            </h6>
+        </div>  
+        <!-- You will get cross domain/origin errors in Chrome with the script below - if you don't run a localhost server -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+        <!-- Required Script for the animations -->
+        <script>
+            $(".icon-homepage-wrapper").hover(
+                function () {
+                    $(this).removeClass('out').addClass('over');
+                },
+                function () {
+                    $(this).removeClass('over').addClass('out');
+                }
+            );
+        </script>
+    </body>
+</html>
+
+
+
