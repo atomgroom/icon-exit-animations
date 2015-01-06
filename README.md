@@ -1,6 +1,6 @@
 # CSS Icon Exit Animations
 
-### Remember that one time that you didn't want a CSS animation to play when the page loads? But, you did want it to play on hover. And, you wanted a seperate exit animation on unhover?
+### Remember that one time that you didn't want a CSS animation to play when the page loads? But, you did want it to play on hover. And, you wanted a separate animation on unhover?
 
 Oh Yeah! This is how you can do that. 
 
@@ -17,7 +17,7 @@ Oh Yeah! This is how you can do that.
 
 ### Local Demo Notes
 
-* I am using [Normalize](http://necolas.github.io/normalize.css/), [animate.css by Dan Eden](https://github.com/daneden/animate.css), [LESS Client Side](http://lesscss.org/#client-side-usage), [Jquery](https://github.com/jquery/jquery)
+* I am using [Normalize.css](http://necolas.github.io/normalize.css/), [animate.css by Dan Eden](https://github.com/daneden/animate.css), [LESS Client Side](http://lesscss.org/#client-side-usage), [Jquery](https://github.com/jquery/jquery)
 * The CSS is generated using LESS and parsed by the Javscript in the < head >
 * The interaction states are cued with add/remove class by using the Jquery in the index.html file
 * If you are not running a local server you might get cross origin errors.
