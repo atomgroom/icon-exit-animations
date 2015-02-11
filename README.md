@@ -39,7 +39,7 @@ Check out a [live demo here](http://atomgroomdesign.github.io/icon-exit-animatio
 
 #### Copyright and license
 
-Copyright 2015 Atom Groom.
+Copyright 2015 Bitovi / Created by Atom Groom.
 
 Licensed under the MIT License:
 http://opensource.org/licenses/MIT
