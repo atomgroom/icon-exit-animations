@@ -2,7 +2,7 @@
 
 ### Remember that one time that you didn't want a CSS animation to play when the page loads? But, you did want it to play on hover. And, you wanted a separate animation on unhover?
 
-Oh Yeah! This is how you can do that. 
+Oh Yeah! This is how you can do that.
 
 * * *
 
@@ -25,14 +25,14 @@ Oh Yeah! This is how you can do that.
 * * *
 
 ### Live Demo
-Check out a [live demo here](http://atomgroomdesign.github.io/icon-exit-animations/).
+Check out a [live demo here](http://atomgroom.github.io/icon-exit-animations/).
 
 * * *
 
 #### Author
 
 * Icons were designed and created for [Bitovi](http://bitovi.com/) - Please do not steal or misuse them.
-* This project is maintained by [Atom Groom](https://github.com/atomgroomdesign)
+* This project is maintained by [Atom Groom](https://github.com/atomgroom)
 * Special thanks to [Dan Eden for Animate.css](https://github.com/daneden/animate.css)
 
 * * *
@@ -43,4 +43,3 @@ Copyright 2015 Bitovi / Created by Atom Groom.
 
 Licensed under the MIT License:
 http://opensource.org/licenses/MIT
-    
